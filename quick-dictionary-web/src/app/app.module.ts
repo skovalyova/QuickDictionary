@@ -15,6 +15,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { QuickActionsBarComponent } from './components/quick-actions-bar/quick-actions-bar.component';
 import { DictionariesListComponent } from './components/dictionaries-list/dictionaries-list.component';
 
+import { AlertService } from './services/alert.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,14 +32,16 @@ import { DictionariesListComponent } from './components/dictionaries-list/dictio
     BrowserAnimationsModule,
     FormsModule,
     ToastrModule.forRoot({
-      timeOut: 5000,
+      timeOut: 10000,
       positionClass: 'toast-bottom-right',
     }),
     BrowserModule,
     DataTablesModule,
     routing
   ],
-  providers: [],
+  providers: [
+    AlertService
+  ],
   bootstrap: [AppComponent]
 })
 

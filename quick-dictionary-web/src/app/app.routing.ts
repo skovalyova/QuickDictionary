@@ -8,6 +8,7 @@ import { DictionariesListComponent } from './components/dictionaries-list/dictio
 
 const appRoutes: Routes = [
   { path: '', component: DictionariesListComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'registration', component: LoginComponent }
 ];

@@ -1,8 +1,12 @@
+@echo off
+title Serve for QuickDictionary app
+
 SET pathToRepository="D:\Documents\Andersen\Angular5\QuickDictionary"
 
-@echo Ng serve:
+start "" http://localhost:4200
+
 set pathToWeb=%pathToRepository%\quick-dictionary-web
 cd /d %pathToWeb%
-ng serve
+call ng serve
 
 pause

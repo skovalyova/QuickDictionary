@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ToastrService } from 'ngx-toastr';
+import { AlertService } from '../../services/alert.service';
 
 @Component({
   selector: 'qd-home',
@@ -8,11 +8,11 @@ import { ToastrService } from 'ngx-toastr';
 })
 
 export class HomeComponent implements OnInit {
-  constructor(private toastr: ToastrService) { }
+  constructor(private alert: AlertService) { }
 
   ngOnInit() { }
 
   showSuccess() {
-    this.toastr.success('Hello world!', 'Toastr fun!');
+    this.alert.showSuccessMessage('Hello world!');
   }
 }
