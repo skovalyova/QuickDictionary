@@ -1,0 +1,44 @@
+$color-wet-asphalt: #263238;
+$color-link: #9d9d9d;
+$color-link-hover: #ffffff;
+
+a {
+    color: $color-link;
+    
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-link-hover;
+    }
+}
+
+.quick-actions {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: $color-wet-asphalt;
+
+    &__social-icons-wrapper {
+        float: right;
+    }
+
+    &__social-icons {
+        list-style: none;
+    }
+
+    &__social-icon {
+        float: left;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+
+    &__social-icon-link {
+        display: inline-block;        
+        width: 40px;
+        text-decoration: none;        
+        text-align: center;
+        line-height: 40px;
+    }
+}

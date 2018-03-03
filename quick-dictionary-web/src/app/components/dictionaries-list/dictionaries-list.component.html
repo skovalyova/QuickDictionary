@@ -1,0 +1,31 @@
+<div class="page-content container">
+  <h1>Словари</h1>
+  <table datatable [dtOptions]="dtOptions" class="table table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Исходный язык</th>
+            <th>Целевой язык</th>
+            <th>Создан</th>
+            <th>Обновлён</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dictionary of dictionaries">
+        <td>
+            <input type="checkbox" name="dictionaries" [(ngModel)]="dictionary.isSelected">
+        </td>
+        <td>{{ dictionary.id }}</td>
+        <td>{{ dictionary.name }}</td>
+        <td>{{ dictionary.description }}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>      
+    </tbody>
+  </table>
+
+  <button (click)="show()"></button>
+</div>

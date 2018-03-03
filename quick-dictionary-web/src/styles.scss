@@ -1,0 +1,32 @@
+$transition-delay: 0.3s;
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=cyrillic');
+
+body, html {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+}
+
+a {
+    transition: all $transition-delay ease-in;
+    
+    &:hover,
+    &:active,
+    &:focus {
+        transition: all $transition-delay ease-in;
+    }
+}
+
+.page-content {
+    margin-top: 141px;
+    margin-bottom: 60px;
+}
+
+#toast-container .toast,
+#toast-container .toast:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+}
+
+.toast-success {
+    //background-color:;
+}
